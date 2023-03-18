@@ -1,6 +1,5 @@
 import axios from 'axios';
 import Notiflix from 'notiflix';
-import simpleLightbox from 'simplelightbox';
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
@@ -98,11 +97,11 @@ function createMarkup(array) {
         </a>`
         
     ).join('');
-    gallery.insertAdjacentElement('beforeend', markup);
+    gallery.insertAdjacentHTML('beforeend', markup);
     simpleLightbox.refresh();
 }
 
-const simpleLightbox = new SimpleLightbox('.gallery a', {
+const simpleLightbox = new SimpleLightbox('.gallery arr', {
     captionsData: 'alt',
     captionDelay: 250,
 });
@@ -126,3 +125,6 @@ Notiflix.Notify.success(`Hooray! We found ${totalHits} images.`);
         Notiflix.Notify.info("We're sorry, but you've reached the end of search results.");
     }
 }
+
+
+ 

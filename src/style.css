@@ -63,7 +63,7 @@ form {
 }
 
 .search-form {
-    background-color: rgb(63 86 177);
+    background-color: rgb(162, 64, 219);
 }
 
 .input {
@@ -74,7 +74,7 @@ form {
     margin-top: 10px;
     margin-bottom: 10px;
     border: none;
-    border-radius: 4px;
+    border-radius: 6px;
     margin-right: 10px;
 }
 
@@ -87,13 +87,13 @@ button {
     all: unset;
     margin-top: 10px;
     margin-bottom: 10px;
-    border-radius: 4px;
+    border-radius: 6px;
 
     width: 100px;
     height: 30px;
 
     font-size: 16px;
-    background: rgb(216, 231, 47);
+    background: rgb(25, 233, 94);
     border: none;
     position: relative;
     color: black;

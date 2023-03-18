@@ -25,11 +25,13 @@ function onSearch(e) {
     if (query !== '') {
         pixabay(query);
         
-    } loadMoreBtn.style.display = 'none';
+    } else {
+        loadMoreBtn.style.display = 'none';
 
-    return Notiflix.Notify.failure(
-'Sorry, there are no images matching your search query. Please try again.'
-    );
+        return Notiflix.Notify.failure(
+            'Sorry, there are no images matching your search query. Please try again.'
+        );
+    }
 }
 
 function onLoadMoreBtn() {

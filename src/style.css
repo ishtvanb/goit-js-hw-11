@@ -99,8 +99,8 @@ button {
     color: black;
     cursor: pointer;
     white-space: nowrap;
-    user-select: none;
     -webkit-user-select: none;
+    user-select: none;
     touch-action: manipulation;
 }
 
